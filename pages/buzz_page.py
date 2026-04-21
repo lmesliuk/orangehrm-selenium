@@ -7,7 +7,7 @@ class BuzzPage(BasePage):
     BUZZ_HEADER = (By.XPATH, "//h6[text()='Buzz']")
     BUZZ_POST_INPUT = (By.XPATH, "//textarea[@placeholder='What's on your mind?']")
 
-    # Methods
+    # Methods 1
     def open(self):
         self.driver.get(self.URL)
         
