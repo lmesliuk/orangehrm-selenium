@@ -6,7 +6,7 @@ from pages.login_page import LoginPage
 @given('the user is on the login page')
 def step_open_login_page(context):
     context.driver = webdriver.Chrome()
-    context.login_page = LoginPage(context.driver)
+    context.login_page = LoginPage(context.driver)  
     context.login_page.open()
 
 
