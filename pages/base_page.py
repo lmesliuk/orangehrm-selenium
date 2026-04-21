@@ -29,3 +29,4 @@ class BasePage:
 
     def wait_for_url_contains(self, text):
         return self.wait.until(EC.url_contains(text))
+
