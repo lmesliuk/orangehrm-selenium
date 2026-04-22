@@ -1,8 +1,6 @@
 import logging
 import os
-
 from pages.login_page import LoginPage
-
 
 logging.basicConfig(
     level=logging.INFO,
