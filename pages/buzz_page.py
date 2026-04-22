@@ -3,11 +3,12 @@ from pages.base_page import BasePage
 
 class BuzzPage(BasePage):
     # Elements locators
-    URL = "https://opensource-demo.orangehrmlive.com/web/index.php/buzz/viewBuzz"
+    PATH = "/web/index.php/buzz/viewBuzz"
+    URL = BasePage.BASE_URL + PATH
     BUZZ_HEADER = (By.XPATH, "//h6[text()='Buzz']")
     BUZZ_POST_INPUT = (By.XPATH, "//textarea[@placeholder='What's on your mind?']")
 
-    # Methods 1
+    # Methods
     def open(self):
         self.driver.get(self.URL)
         

@@ -3,8 +3,9 @@ from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
-    URL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-
+    # Elements locators
+    PATH = "/web/index.php/auth/login"
+    URL = BasePage.BASE_URL + PATH    
     USERNAME_INPUT = (By.NAME, "username")
     PASSWORD_INPUT = (By.NAME, "password")
     LOGIN_BUTTON = (By.XPATH, "//button[@type='submit']")

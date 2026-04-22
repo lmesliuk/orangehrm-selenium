@@ -1,8 +1,12 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# BasePage class to be inherited by all page classes
+class BasePage:    
+    # Base URL for all pages    
+    BASE_URL = "https://opensource-demo.orangehrmlive.com"
 
-class BasePage:
+    # Methods for all pages
     def __init__(self, driver, timeout=10):
         self.driver = driver
         self.wait = WebDriverWait(driver, timeout)
